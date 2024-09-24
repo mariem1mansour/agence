@@ -34,15 +34,50 @@ header nav ul {
 
 header nav ul li {
   font-size: 16px;
- font-family: "Montserrat" ,sans-serif;
- text-align: center;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
 
 }
-header nav h1{
+
+header nav h1 {
   font-family: "Long Cang", cursive;
   font-size: 48px;
 }
-header nav{
+
+header nav {
   display: flex;
   justify-content: space-between;
+}
+
+/* vp */
+.vp {
+  background: url('../images/frame.jpg') center center/cover;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vp-content {
+  color: white;
+  padding: 100px;
+  text-align: center;
+
+}
+
+.vp-content h1 {
+  font-size: 52px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  margin: 25px;
+}
+
+.vp-content p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-weight: 300;
+}
+.vp-content span{
+  color: #B69512;
+  font-weight: 400;
 }
