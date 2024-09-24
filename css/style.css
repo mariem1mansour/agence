@@ -217,11 +217,12 @@ color: var(--primary);
 
 .vp-logo{
   font-size: 1.8rem;
-  font-family: "Long Cang", cursive;
+  font-family: "Long Cang", system-ui;
   display: flex;
   flex-flow: row nowrap;
 justify-items: center;
 margin-bottom: 0;
+align-items: center;
 }
 .vp-logo i{
 color:var(--primary);
