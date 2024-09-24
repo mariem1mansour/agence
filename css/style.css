@@ -1,3 +1,4 @@
+/* reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -5,18 +6,30 @@
 }
 
 /* general */
-
-li {
-  list-style: none;
+:root{
+--primary:#F1C40F;
+--secondary:#333;
 }
+body{
+  font-family: "Montserrat", sans-serif;
+}
+p{
+  margin-bottom: 0.8rem;
+}
+h1,h2,h3,h4{
+  margin-bottom: 1rem;
+}
+/* li {
+  list-style: none;
+} */
 
 a {
   text-decoration: none;
-  color: white;
+  color: var(--secondary);
 }
 
 /* header */
-header {
+/* header {
   height: 100px;
   background-color: #333333;
   margin: auto;
@@ -47,10 +60,10 @@ header nav h1 {
 header nav {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 /* vp */
-.vp {
+/* .vp {
   background: url('../images/frame.jpg') center center/cover;
   height: 600px;
   display: flex;
@@ -81,17 +94,15 @@ header nav {
 .vp-content span {
   color: #B69512;
   font-weight: 400;
-}
+} */
 
 /* offers */
-.offer {
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-  margin: 100px 0px;
-}
+/* .offer {
 
-.offer h2 {
+  margin: 100px 0px;
+} */
+
+/* .offer h2 {
   font-family: "Montserrat", sans-serif;
   padding-left: 50px;
   margin-bottom: 20px;
@@ -134,4 +145,91 @@ header nav {
   background-color: black;
   width: 40px;
   margin: auto;
+} */
+/* team */
+/* .team{
+display: flex;
+justify-content: center;
+align-items: center;
 }
+.team-content{
+height: 400px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.team-image img{
+width: 50%;
+
+}
+.team-info{
+background-color: #333333;
+color: white;
+padding: 30px;
+} */
+
+  /* .team-info h3{
+  
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+  }
+  .team-info span{
+    color: #B69512;
+    font-weight: 400;
+  }
+  .team-info p{
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+  } */
+
+
+
+/* the page */
+  .vp-container{min-height: 100vh;
+    display: flex;
+flex-direction: column;
+background-color: #fff;
+  }
+  /* header */
+  header{
+padding: 1rem 2rem;
+background: var(--secondary);
+display: flex;
+flex-flow: row nowrap;
+justify-content:space-between ;
+line-height: 1.8rem;
+  }
+  header a{
+color:white;
+  }
+  header ul{
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+  }
+  header ul li{
+    padding: 1rem;
+  }
+  header ul li a:hover{
+color: var(--primary);
+  }
+
+.vp-logo{
+  font-size: 1.8rem;
+  font-family: "Long Cang", cursive;
+  display: flex;
+  flex-flow: row nowrap;
+justify-items: center;
+margin-bottom: 0;
+}
+.vp-logo i{
+color:var(--primary);
+font-size: 1.5rem;
+margin-right: 0.5rem;
+}
+
+
+  .vp{
+flex: auto;
+  }
