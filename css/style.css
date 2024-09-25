@@ -13,6 +13,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background: #eee;
+  columns: var(--secondary);
 }
 
 p {
@@ -37,7 +39,12 @@ strong{
   font-weight: 400;
   color: var(--primary);
 }
-
+.container{
+  display: block; 
+  /* pour margin auto */
+max-width: 1200px;
+margin:auto;
+}
 
 /* the page */
 .vp-container {
@@ -115,4 +122,38 @@ background: url('../images/frame.jpg') center center/cover;
 .vp-content h1{
   font-size: 3.2rem;
 margin-bottom: 3rem;
+}
+/* offer */
+.offer{
+  padding: 10rem 1rem;
+}
+.offer-list{
+  display: flex;
+  flex:row nowrap;/* flex ==flex-flow */
+  list-style: none;
+  justify-content: space-between;
+}
+.offer-elem{
+  margin: 1rem;
+  background: white;
+  border: 1px solid #ddd;
+  flex: 1;/* => flex-grow =1 */
+}
+.offer-elem-img{
+  width: 100%;/* mil parent mte3ha */
+
+}
+.offer-elem-text{
+  padding: 2rem;
+  text-align: center;
+}
+.offer-separator{
+  width: 50px;
+  height: 1px;
+  margin:1rem auto;
+  background: var(--secondary);
+}
+.title{
+  font-size: 2rem;
+  font-weight:300 ;
 }
