@@ -23,7 +23,6 @@ img {
 
 p {
   margin-bottom: 0.8rem;
-
 }
 
 strong {
@@ -55,6 +54,11 @@ a {
   max-width: 1200px;
 }
 
+.title {
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
 /* header */
 header {
   padding: 1rem 2rem;
@@ -77,7 +81,6 @@ header a {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-
 }
 
 header ul {
@@ -107,6 +110,7 @@ header ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 700px;
   background: url(../images/frame.jpg) center center/cover;
 }
 
@@ -126,7 +130,6 @@ header ul li a:hover {
 .vp-content h1 {
   font-size: 3.2rem;
   margin-bottom: 2rem;
-
 }
 
 /* ^offer */
@@ -139,7 +142,6 @@ header ul li a:hover {
   flex: row nowrap;
   list-style: none;
   justify-content: space-between;
-
 }
 
 .offer-elem {
@@ -163,26 +165,19 @@ header ul li a:hover {
   height: 2px;
   background: var(--secondary);
   margin: 1rem auto;
-
 }
-
-.title {
-  font-weight: 300;
-  font-size: 2rem;
-}
-
+/* ^ Team */
 .who {
   display: flex;
   flex-flow: row nowrap;
 }
 
 .who-content-img {
-  flex: 1;
+  flex: 1; 
+  background: url("/images/team.jpg") center center/cover;
 }
 
-.who-content-img img {
-  width: 100%;
-}
+
 
 .who-content-text {
   display: flex;
@@ -192,7 +187,6 @@ header ul li a:hover {
   padding: 4rem;
   flex-direction: column;
   justify-content: center;
-
 }
 
 .who-content-text p {
@@ -228,8 +222,8 @@ header ul li a:hover {
   border-radius: 5px;
   margin-bottom: 1rem;
   flex: 1;
+  padding: 2rem;
 }
-
 
 .testimonials-elm-text {
   padding: 0 2rem;
@@ -237,5 +231,73 @@ header ul li a:hover {
 
 .testimonials-elm-profil img {
   width: 50px;
+
   border-radius: 50px;
+}
+
+.testimonials-elm-profil p {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-elm-text p i {
+  margin: 0, 2rem;
+}
+
+/* formulaire */
+.contact {
+  padding: 10rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--secondary);
+}
+
+.contact-form {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.contact-form input {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+  background: var(--secondary);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  outline: 0;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact-form-button {
+  background-color: var(--primary);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 40px;
+  margin: 3rem auto;
+  display: block;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  font-size: 1.3rem;
+}
+
+.contact-form-button:hover {
+  background-color: rgb(255, 0, 0);
+}
+
+/* footer */
+footer {
+  background: #444;
+  color: white;
+  padding: 4rem;
+  text-align: center;
+}
+footer p{
+  margin-bottom: 0;
 }
