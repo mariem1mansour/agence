@@ -166,15 +166,17 @@ header ul li a:hover {
   background: var(--secondary);
   margin: 1rem auto;
 }
+
 /* ^ Team */
 .who {
   display: flex;
   flex-flow: row nowrap;
+  min-height: 600px;
 }
 
 .who-content-img {
-  flex: 1; 
-  background: url("/images/team.jpg") center center/cover;
+  flex: 1;
+  /* background: url("/images/team.jpg") center center/cover; */
 }
 
 
@@ -203,6 +205,7 @@ header ul li a:hover {
   color: white;
 }
 
+/* testimonials */
 .testimonials {
   padding: 5rem 1rem;
 }
@@ -298,6 +301,7 @@ footer {
   padding: 4rem;
   text-align: center;
 }
-footer p{
+
+footer p {
   margin-bottom: 0;
 }
